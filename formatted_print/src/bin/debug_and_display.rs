@@ -17,14 +17,11 @@ fn main() {
 
     println!("{0} this is {1}. {1} this is {0}.", "Alice", "Bob");
 
-    println!("{hoh} {moh}",
-             hoh = "moh",
-             moh = "hoh");
+    println!("{hoh} {moh}", hoh = "moh", moh = "hoh");
 
     println!("{0} in binary {0:b}", 2);
 
     println!("{num:>0pad$}", num = 1, pad = 6);
-
 
     let s1 = Structure(900);
     let s2 = Structure(30);
