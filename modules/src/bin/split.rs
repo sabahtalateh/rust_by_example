@@ -11,14 +11,14 @@ fn main() {
     lib::hello::hello();
     lib::hello2::hello();
 
-   function();
-   my_mod::function();
+    function();
+    my_mod::function();
 
-   my_mod::indirect_access();
-   my_mod::nested_mod::function();
-   my_mod::call_public_function_in_my_mod();
+    my_mod::indirect_access();
+    my_mod::nested_mod::function();
+    my_mod::call_public_function_in_my_mod();
 
-   my_mod::public_function_in_crate();
+    my_mod::public_function_in_crate();
 
     // Error! Visibility restriction.
     // my_mod::nested_mod::public_function_in_my_mod();
