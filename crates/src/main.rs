@@ -1,3 +1,10 @@
+extern crate rary;
+
 fn main() {
-    println!("Hello, world!");
+    rary::public_function();
+
+    // Error! `private_function` is private
+    //rary::private_function();
+
+    rary::indirect_access();
 }
