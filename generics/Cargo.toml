@@ -1,5 +1,5 @@
 [package]
-name = "lifetimes"
+name = "generics"
 version = "0.1.0"
 authors = ["sabahtalateh <sabahtalateh@gmail.com>"]
 edition = "2018"
