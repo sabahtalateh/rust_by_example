@@ -22,7 +22,7 @@ fn main() {
         eat_box_i32(boxed_i32);
 
         // _ref_to_i32 is a reference to boxed_i32 that was destroyed earlier so it can be used
-//        borrow_i32(_ref_to_i32);
+        //        borrow_i32(_ref_to_i32);
     }
-//    eat_box_i32(boxed_i32);
+    //    eat_box_i32(boxed_i32);
 }

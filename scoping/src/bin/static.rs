@@ -9,6 +9,7 @@ fn coerce_static<'a>(_: &'a i32) -> &'a i32 {
 
 fn main() {
     {
+        // Make a `string` literal and print it:
         let static_string: &str = "I'm in readonly memory";
         println!("static_string: {}", static_string);
 

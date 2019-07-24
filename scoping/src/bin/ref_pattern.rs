@@ -18,7 +18,10 @@ fn main() {
 
     // copy_of_x and copy_of_x2 is the same
     let copy_of_x = {
-        let Point { x: ref ref_to_x, y: _ } = point;
+        let Point {
+            x: ref ref_to_x,
+            y: _,
+        } = point;
         *ref_to_x
     };
 
@@ -35,12 +38,18 @@ fn main() {
     let mut mutable_point = point;
 
     {
-        let Point { x: _, y: ref mut mut_ref_to_y } = mutable_point;
+        let Point {
+            x: _,
+            y: ref mut mut_ref_to_y,
+        } = mutable_point;
         *mut_ref_to_y = 1;
     }
 
     println!("point is ({}, {})", point.x, point.y);
-    println!("mutable_point is ({}, {})", mutable_point.x, mutable_point.y);
+    println!(
+        "mutable_point is ({}, {})",
+        mutable_point.x, mutable_point.y
+    );
 
     // Mutable tuple
     let mut mutable_tuple = (Box::new(5u32), 3u32);
