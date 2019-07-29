@@ -16,7 +16,7 @@ fn origin() -> Point {
 }
 
 fn boxed_origin() -> Box<Point> {
-    // Allocate on heap
+    // Allocate this point in the heap, and return a pointer to it
     Box::new(Point { x: 0.0, y: 0.0 })
 }
 
